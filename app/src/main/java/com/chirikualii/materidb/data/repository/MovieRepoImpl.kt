@@ -17,7 +17,7 @@ class MovieRepoImpl(
                val listData = listMovie?.results?.map {
                    Movie(
                        title = it.title,
-                       genre = it.releaseDate,
+                       releaseDate = it.releaseDate,
                        imagePoster = it.posterPath,
                        overview = it.overview,
                        backdrop = it.backdropPath
@@ -46,7 +46,7 @@ class MovieRepoImpl(
                 val listData = listMovie?.results?.map {
                     Movie(
                         title = it.title,
-                        genre = it.releaseDate,
+                        releaseDate = it.releaseDate,
                         imagePoster = it.posterPath,
                         overview = it.overview,
                         backdrop = it.backdropPath

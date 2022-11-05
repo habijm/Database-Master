@@ -25,7 +25,7 @@ class DetailMovieActivity : AppCompatActivity() {
 
 
         binding.txtTitleMovie.text = movie?.title
-        binding.txtReleaseDate.text = movie?.genre
+        binding.txtReleaseDate.text = movie?.releaseDate
         binding.txtOverview.text = movie?.overview
 
         Glide.with(this)

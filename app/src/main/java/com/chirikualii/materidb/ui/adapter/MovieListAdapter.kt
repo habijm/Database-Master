@@ -17,7 +17,7 @@ class MovieListAdapter :RecyclerView.Adapter<MovieListAdapter.Holder>() {
         fun bindView(data:Movie){
 
             binding.tvTitle.text = data.title
-            binding.tvGenre.text = data.genre
+            binding.tvGenre.text = data.releaseDate
 
             Glide.with(binding.root.context)
                 .load("https://image.tmdb.org/t/p/w500${data.imagePoster}")
