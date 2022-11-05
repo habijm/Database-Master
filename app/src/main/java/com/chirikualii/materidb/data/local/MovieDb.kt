@@ -9,4 +9,6 @@ import com.chirikualii.materidb.data.local.entity.MovieEntity
 abstract class MovieDb : RoomDatabase() {
 
     abstract fun movieDao(): MovieDao
+
+
 }

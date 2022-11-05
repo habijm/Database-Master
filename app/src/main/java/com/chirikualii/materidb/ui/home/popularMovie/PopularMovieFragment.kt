@@ -17,7 +17,7 @@ class PopularMovieFragment : Fragment() {
     private lateinit var adapter: MovieListAdapter
 
     private val mViewModel: PopularMovieViewModel by viewModels(
-        factoryProducer = { PopularMovieViewModelFactory() }
+        factoryProducer = { PopularMovieViewModelFactory(requireContext()) }
     )
 
     override fun onCreateView(

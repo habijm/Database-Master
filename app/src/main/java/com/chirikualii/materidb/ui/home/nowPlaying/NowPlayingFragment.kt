@@ -22,7 +22,7 @@ class NowPlayingFragment : Fragment() {
     private lateinit var adapter: MovieListAdapter
 
     private val mViewModel: NowPlayingViewModel by viewModels(
-        factoryProducer = { NowPlayingViewModelFactory() }
+        factoryProducer = { NowPlayingViewModelFactory(requireContext()) }
     )
 
     override fun onCreateView(
