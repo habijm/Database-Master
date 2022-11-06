@@ -105,11 +105,13 @@ class MovieRepoImpl(
                 MovieType.popular
             ).map {
                 Movie(
+                    movieId = it.movieId,
                     title = it.title,
                     releaseDate = it.releaseDate,
                     imagePoster = it.imagePoster,
                     overview = it.overview,
-                    backdrop = it.backdrop
+                    backdrop = it.backdrop,
+                    bookmark = it.bookmark
                 )
             }
             return listData
@@ -128,11 +130,13 @@ class MovieRepoImpl(
                 MovieType.nowPlaying
             ).map {
                 Movie(
+                    movieId = it.movieId,
                     title = it.title,
                     releaseDate = it.releaseDate,
                     imagePoster = it.imagePoster,
                     overview = it.overview,
-                    backdrop = it.backdrop
+                    backdrop = it.backdrop,
+                    bookmark = it.bookmark
                 )
             }
             return listData

@@ -25,5 +25,8 @@ data class MovieEntity(
     val overview: String,
 
     @ColumnInfo(name = "type_movie")
-    val typeMovie: String
+    val typeMovie: String,
+
+    @ColumnInfo (name="bookmark")
+    val bookmark :Int = 0
 )

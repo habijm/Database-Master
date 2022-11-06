@@ -35,8 +35,14 @@ class PopularMovieFragment : Fragment() {
         adapter = MovieListAdapter()
         binding.rvMovie.adapter = adapter
 
-        mViewModel.doGetPopularMovie()
+
         observeView()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        mViewModel.doGetPopularMovie()
+
     }
 
     private fun observeView() {

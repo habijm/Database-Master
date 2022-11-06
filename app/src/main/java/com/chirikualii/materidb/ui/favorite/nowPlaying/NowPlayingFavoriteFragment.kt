@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.chirikualii.materidb.R
-import com.chirikualii.materidb.data.dummy.DataDummy
 import com.chirikualii.materidb.databinding.FragmentNowPlayingFavoriteBinding
 import com.chirikualii.materidb.ui.adapter.MovieListAdapter
 
